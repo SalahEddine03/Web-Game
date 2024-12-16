@@ -1,0 +1,93 @@
+/* General page styling */
+.LobbyPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1f1f, #383838);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Header styling */
+.LobbyPage h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+/* Instructions or description text */
+.LobbyPage p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #b5b5b5;
+}
+
+/* Input container styling */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Input field */
+.input-container input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #00ff88;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #262626;
+    color: #00ff88;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-container input[type="text"]:focus {
+    border-color: #00ffaa;
+    box-shadow: 0 0 10px #00ffaa;
+}
+
+/* Buttons styling */
+/* General button styles */
+.button {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    background: #00ff88;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #00ffaa;
+    box-shadow: 0 0 10px #00ffaa;
+}
+
+.button:active {
+    transform: scale(0.98);
+    background: #00ff77;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .LobbyPage h1 {
+        font-size: 2.5rem;
+    }
+
+    .input-container {
+        width: 90%;
+    }
+}
